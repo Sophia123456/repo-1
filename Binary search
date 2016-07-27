@@ -1,0 +1,23 @@
+def nadji(niz,element):
+	prvi=0
+	poslednji=len(niz)-1
+	
+	while prvi<=poslednji:
+		sredina=int((prvi+poslednji)/2)
+		if niz[sredina]==element:
+			return sredina
+		elif niz[sredina]>element:
+			poslednji=sredina-1
+		else:
+			prvi=sredina+1 
+	
+	return False
+	"""
+def nadji_mesto_greske(niz,element):
+	if nadji=False:
+		print"n=len(niz)-"
+		for n in range (len(niz))
+	"""
+niz=["BMW","ford","mercedes","audi","ferarri"]
+niz.sort()
+print(nadji(niz,"BMW"))	
