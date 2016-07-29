@@ -1,0 +1,15 @@
+def quicksort(arr):
+
+	if not arr:
+	    return []
+	
+	pivots = [x for x in arr if x == arr[0]]
+	lesser = quicksort([x for x in arr if x < arr[0]])
+	greater = quicksort([x for x in arr if x > arr[0]])
+	
+	return lesser + pivots + greater
+
+
+
+niz=[2,8,1,6,0,5]
+print(quicksort(niz))
